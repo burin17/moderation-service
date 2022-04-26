@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: moderation-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18761/eureka/
+    fetch-registry: true
+    registerWithEureka: true
+  instance:
+    preferIpAddress: true
+server:
+  port: 22080
