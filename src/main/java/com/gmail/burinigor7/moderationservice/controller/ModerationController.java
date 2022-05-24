@@ -19,4 +19,9 @@ public class ModerationController {
     public FundraisingProject moderate(@PathVariable Long fpId, @RequestParam boolean isValid) {
         return moderationService.moderate(fpId, isValid);
     }
+
+    @PostMapping("/block/{fpId}")
+    public FundraisingProject block(@PathVariable Long fpId) {
+        return moderationService.block(fpId);
+    }
 }

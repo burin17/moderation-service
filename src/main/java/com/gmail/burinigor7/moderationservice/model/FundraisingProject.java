@@ -1,6 +1,7 @@
 package com.gmail.burinigor7.moderationservice.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class FundraisingProject {
     private Long fundraisingProjectId;
@@ -13,6 +14,42 @@ public class FundraisingProject {
     private Float amountGoal;
     private Integer days;
     private Float currentAmount;
+    private String story;
+    private List<String> youtubeLinks;
+    private String moderationNotes;
+    private List<String> tags;
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public String getModerationNotes() {
+        return moderationNotes;
+    }
+
+    public void setModerationNotes(String moderationNotes) {
+        this.moderationNotes = moderationNotes;
+    }
+
+    public String getStory() {
+        return story;
+    }
+
+    public void setStory(String story) {
+        this.story = story;
+    }
+
+    public List<String> getYoutubeLinks() {
+        return youtubeLinks;
+    }
+
+    public void setYoutubeLinks(List<String> youtubeLinks) {
+        this.youtubeLinks = youtubeLinks;
+    }
 
     public Float getCurrentAmount() {
         return currentAmount;

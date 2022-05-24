@@ -24,4 +24,10 @@ public class ModerationService {
         }
         return crudServiceApiClient.updateFundraisingProject(fundraisingProject);
     }
+
+    public FundraisingProject block(Long fpId) {
+        FundraisingProject fundraisingProject = crudServiceApiClient.getFundraisingProjectById(fpId);
+        fundraisingProject.setStatus(FundraisingProjectStatus.BLOCKED);
+        return crudServiceApiClient.updateFundraisingProject(fundraisingProject);
+    }
 }
